@@ -16,6 +16,10 @@ Route::group([
     Route::post('createDeliver', 'AuthController@signup');
 });
 
+Route::get('/', function () {
+    return 'Hello World';
+});
+
 // user apis
 Route::get('getClients', 'ClientController@index');
 Route::get('getClient/{id}', 'ClientController@show');
